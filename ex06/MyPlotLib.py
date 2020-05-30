@@ -10,8 +10,7 @@ class MyPlotLib:
 
     @staticmethod
     def density(df, features):
-        df[features].plot.kde()
-        plt.legend(loc="upper right")
+        df[features].plot.kde(legend=True)
         plt.show()
 
     @staticmethod
