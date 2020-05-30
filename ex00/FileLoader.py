@@ -12,9 +12,9 @@ class FileLoader():
 
     def display(df, n):
         if n > 0:
-            print(df[:n])
+            print(df.head(n))
         else:
-            print(df[n:])
+            print(df.tail(-n))
 
 
 if __name__ == '__main__':
